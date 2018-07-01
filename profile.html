@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid info p-3" id="top-icons">
+        <div class="row">
+            <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
+                <div class="info-icons p-2">
+                    <a href="#" class="mr-2 primary-color"><input id="articles" type="submit" name="articles" value="All Articles" class="login-btn"></a>
+                    <a href="#" class="mr-2 primary-color"><input id="logout" type="submit" name="logout" value="LogOut" class="login-btn"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="container">
+            <div class="row height-90 align-items-center justify-content-center">
+                <div class="col">
+
+                    <div class="banner text-center">
+                        <h1 class="text-capitalize">
+                            <strong class="primary-color">make a post</strong>
+                        </h1>
+                        <form id="postForm" action="./getimage.php" method="post" enctype="multipart/form-data">
+                            <div class="form-input">
+                                <input id="post-image" type="file" name="post-image" accept="image/gif, image/jpeg, image/png, image/jpg" onchange="readURL(this)">
+                                <img id="disp" src="#" alt="your image" />
+                            </div>
+                            <div class="form-input">
+                                <input id="post-text" type="text" name="post-text" placeholder="Enter Caption">
+                            </div>
+                            <input id="upload" type="submit" name="upload" value="upload post" class="login-btn text-capitalize">
+                            <!--                            <a href="" class="btn my-4 text-capitalize">upload post</a>-->
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div id="err" style="color: #fff; border: 2px solid white;"></div>
+    <!-- bootstrap js -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <!-- my script js -->
+    <script src="JS/my_script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicB</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- font awesome -->
+    <script src="./JS/fontawesome-all.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <img src="./Images/login_left_edited.jpg" alt="Login" class="login-img">
+        <h3>Member Login</h3>
+
+        <form id="userForm" action="login.php" method="post">
+            <div class="form-input">
+                <span class="fas fa-envelope fa-2x font-awesome"></span>
+                <input id="email" type="email" name="email" placeholder="Enter Email ID">
+            </div>
+            <div class="form-input">
+                <span class="fas fa-key fa-2x font-awesome"></span>
+                <input id="pass" type="password" name="password" placeholder="Enter Password">
+            </div>
+            <input id="submit" type="submit" name="submit" value="LOGIN" class="login-btn">
+        </form>
+    </div>
+    <div id="ack" style="color: #fff; border: 2px solid white;"></div>
+    <script src="./JS/jquery-3.3.1.min.js"></script>
+    <script src="./JS/my_script.js"></script>
+</body>
+
+</html>
